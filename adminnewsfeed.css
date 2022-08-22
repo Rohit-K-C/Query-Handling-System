@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    font-family: sans-serif;
+  
+}
+#post-details{
+    outline: none;
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+   
+
+}
+
+h1{
+    color: #363534;
+    font-size: 25px;
+    padding-left: 20px;
+    padding-top: 10px;
+    width: 50%;
+    margin-left: 25%;
+    /*margin-left: 25%;*/
+    margin-top: 20px;
+    background-color: white;
+    border: 1px solid;
+    border-left-color: grey;
+    border-right-color: grey;
+    border-top-color: grey;
+    border-bottom-color: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+}
+h2{
+    color: black;
+    text-align: left;
+    font-size: 20px;
+    padding-left: 20px;
+    width: 50%;
+    margin-left: 25%;
+    /*margin-left: 25%;*/
+    background-color: white;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    border: 1px solid;
+    border-left-color: grey;
+    border-right-color: grey;
+    border-top-color: white;
+    border-bottom-color: white;
+    font-weight: normal;
+
+}
+h3{
+    color: grey;
+    text-align: left;
+    font-size: 12px;
+    font-family: sans-serif;
+    padding-left: 20px;
+    width: 50%;
+    margin-left: 25%;
+    /*margin-left: 25%;*/
+    background-color: white;
+    padding-top: 5px;
+    border: 1px solid;
+    border-left-color: grey;
+    border-right-color: grey;
+    border-top-color: white;
+    border-bottom-color: white;
+
+}
+#break{
+    background-color: white;
+    width: 50%;
+    margin-left: 25%;
+    height: 50px;
+    border: 1px solid;
+    border-left-color: grey;
+    border-right-color: grey;
+    border-top-color: black;
+    border-bottom-color: grey;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    flex-direction: row;
+
+}
+#break form{
+    /*width: 300px;*/
+    display: flex;
+
+}
+#ans{
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    margin-left: 20px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    border: 1px solid black;
+   height: 30px;
+   padding: 5px;
+   margin-top: 5px;
+   
+}
+#break form input[type="text"]{
+    border-radius: 10px;
+    margin-top: 5px;
+    height: 30px;
+    margin-left: 10px;
+    outline: none;
+    width: 300px;
+    
+}
+#break form input[type="submit"]{
+    border-radius: 10px;
+    margin-left: 10px;
+    outline: none;
+    width: 50px;
+    height: 30px;
+    margin-top: 5px;
+}
+#pimage{
+    width: 50%;
+    margin-left: 25%;
+    border: 1px solid;
+    border-left-color: grey;
+    border-right-color: grey;
+    border-top-color: white;
+    border-bottom-color: white;
+
+   
+}
+
+.btn{
+    padding-left: 30px  ;
+    background: transparent;
+    border: none;
+    font-size: 45px;
+    outline: none;
+    color: grey;
+}
+
+.btn i:hover{
+    cursor: pointer;
+}
