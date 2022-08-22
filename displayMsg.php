@@ -24,14 +24,7 @@ session_start();
             while ($row = mysqli_fetch_array($sql)) {
                 $message = $row['msg'];
                 $timeSend = $row['date'];
-    //             echo "<div id='sender'>";
-    //             echo "<label id='send'>".$row['msg']."</label><br><br><br>";
-    //             echo "<label id='timeSend'>".$timeSend."</label><br><br><br>";
-    //             echo "</div>";
-    //             echo "<div id='receiver'>";
-    //             echo "<label id='receive'>".$message1."</label><br><br><br>";
-				// echo "<label id='timeReceive'>".$timeReceive."</label><br><br><br>";
-    //             echo "</div>";
+    
                 
                 
             }

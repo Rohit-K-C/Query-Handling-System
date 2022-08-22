@@ -21,7 +21,8 @@ while($row=mysqli_fetch_assoc($sql)){
 	$postId = $row['post_id'];
 	echo "<div id='container'>";
 	echo"<img src='img.png' id='pp'>";
-	echo "<div id='cmtBy'>".$row['commentedBy']."</div>";
+
+	echo "<div id='cmtBy'>".$row['commentedBy']."</div><br>";
 	echo "<div id='cmt'>".$row['comments']."</div>";
 	echo "</div>";
 

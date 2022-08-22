@@ -38,6 +38,7 @@ break;
 		?>
 
 <body>
+	
 	<div class="top-bar">
 		<div class="qhs">Query Handling System</div>
 		
@@ -52,6 +53,12 @@ break;
 		</div>
 
 		<div class="notification">
+			<?php
+		include "conn.php";
+		$count = mysqli_num_rows(mysqli_query($conn, "SELECT * FROM notification where receiver='$email' or receiver='All'")); 
+	 
+		echo $count;
+		?>
 				<a href="notification.php" target="fdeg">Notification</a>
 		</div>
 			

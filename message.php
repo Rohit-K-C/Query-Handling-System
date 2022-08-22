@@ -19,10 +19,17 @@
 				while ($row = mysqli_fetch_array($request))
 				{
 				$userEmail = $row['email'];
+				$sqlCheck = mysqli_query($conn,"SELECT followedBy FROM followunfollow WHERE email='$userEmail' AND followedBy='$username'");
+				while ($row1 = mysqli_fetch_array($sqlCheck))
+				{
+
 				$sql = mysqli_query($conn,"SELECT uname FROM user_login WHERE email = '$userEmail'");
 				while($row1 = mysqli_fetch_array($sql)){
 					echo "<tr><td><a href=\"chat.php?email=".$row["email"]."\" target='msgFrame' id='email'>".$row1['uname']."</a></td></tr>";
 				}									
+
+				}
+
 				
 				}	
 			?>
