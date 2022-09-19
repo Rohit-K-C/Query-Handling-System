@@ -25,6 +25,7 @@ break;
 <body>
 	<?php
 	session_start();
+	unset($_SESSION['ans']);
 	$email = $_SESSION['tt'];
 	if ($email==null || $email!='admin@admin') {
 		echo"<script>alert('Please login first');

@@ -57,7 +57,7 @@ while ($row = mysqli_fetch_array($sql)){
         // echo "<td><button class='open-button' name='btn1' onclick='openForm()''>Notification</button></td>";
         echo "</tr>";
         
-    
+     	 	
        
 }
 
@@ -65,10 +65,10 @@ while ($row = mysqli_fetch_array($sql)){
 		else{
 				echo '<script>
 				alert("Please enter the name");	
-				// window.location.href="admin-homepage.php";
+				
 		</script>';
-
-		}
+	}
+			
 echo "</table>";
 
 ?>

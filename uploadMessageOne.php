@@ -12,7 +12,7 @@ if(!$sql){
 	else{
 		echo '<script>
 				alert("Successfully Sent.");
-				window.location.href="admin-homepage.php";	
+					
 				
 		</script>';
 	}

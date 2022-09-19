@@ -12,8 +12,8 @@
 				$email = $_POST['email'];
 				$uname = $_POST['username'];
 				$password = $_POST["password"];
-				session_start();
-				$username = $_SESSION['tt'];
+				// session_start();
+				// $username = $_SESSION['tt'];
 				include "conn.php";
 					$sql1 = mysqli_query($conn,"SELECT email FROM user_login");
 					while ($row1 = mysqli_fetch_assoc($sql1)){

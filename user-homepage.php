@@ -110,7 +110,7 @@ break;
 			<?php
 				$username = $_SESSION['tt']; 
 				include "conn.php";
-				$request = mysqli_query($conn,"SELECT email FROM followunfollow WHERE followedBy = '$username'");
+				$request = mysqli_query($conn,"SELECT email FROM followunfollow WHERE followedBy = '$username' and follow='1'");
 				while ($row = mysqli_fetch_array($request))
 																	{
 																	
@@ -191,11 +191,12 @@ break;
     if(mysqli_num_rows($res)>0){
       
     while($row = mysqli_fetch_assoc($res)){
+    	$userName = $row["username"];
        $images = $row["image"];
        $infom = $row["info"];
        $postId = $row["postID"];
       echo "  
-          <h1>$uname</h1>
+          <h1>$userName</h1>
           
         ";
 

@@ -15,11 +15,14 @@
     
     include 'conn.php';
     $email = $_GET['email'];
+    session_start();
+    $_SESSION['ans'] = $email;
     $sql = "select * from post where username='$email'";
     $res = mysqli_query($conn, $sql);
     if(mysqli_num_rows($res)>0){
       
     while($row = mysqli_fetch_assoc($res)){
+      $pid = $row["postID"];
        $images = $row["image"];
        $infom = $row["info"];
        $uname = $row["username"];
@@ -37,7 +40,11 @@
           <input type="text" name="text" placeholder="Write a comment....">
           <input type="submit" name="Submit" value="post">
         </form>
-         <a href="viewAnswer.php" id="ans">View Answer</a>
+        <?php
+        echo "<a href=\"viewAnswerAdmin.php?email=".$row["postID"]."\" id='ans'>View Answer</a>";
+        ?>
+
+         <!-- <a href="viewAnswerAdmin.php?pid='.$row['postID'].'" id="ans">View Answer</a> -->
         
         
       </div>

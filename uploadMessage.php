@@ -11,7 +11,8 @@ if(!$sql){
 	}
 	else{
 		echo '<script>
-				alert("Successfully Sent.");	
+				alert("Successfully Sent.");
+			 
 				
 		</script>';
 	}

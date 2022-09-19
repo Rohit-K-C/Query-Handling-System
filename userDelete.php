@@ -9,6 +9,7 @@ if(!$sql){
 		echo '<script>
 				alert("Successfully Deleted.");	
 				
+				
 		</script>';
 	}
 
